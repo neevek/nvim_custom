@@ -13,6 +13,8 @@ g.gitblame_ignored_filetypes = {
 
 -- symbols-outline.nvim configurations
 g.symbols_outline = {
+  auto_preview = false,
+  show_numbers = true,
   keymaps = {
     close = {}, -- disable 'quit on ESC'
   },

@@ -7,7 +7,6 @@ local map = require("core.utils").map
 
 map("n", "<leader>cc", ":Telescope <CR>")
 map("n", "<leader>w", ":w <CR>")
-map("n", "<leader>q", ":q <CR>")
 map("n", "<F3>", ":NvimTreeToggle <CR>")
 map("n", "tt", ":q <CR>")
 map("n", "<space>", "viwye<space><ESC>")                -- yank word under cursor
