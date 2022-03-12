@@ -3,7 +3,13 @@ local userPlugins = require "custom.plugins"
 local g = vim.g
 
 -- git_blame configurations
-g.gitblame_ignored_filetypes = {'NvimTree', 'packer', 'Outline'}
+g.gitblame_ignored_filetypes = {
+  'NvimTree',
+  'packer',
+  'Outline',
+  'DiffviewFiles',
+  'DiffviewFileHistory',
+}
 
 -- symbols-outline.nvim configurations
 g.symbols_outline = {
