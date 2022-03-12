@@ -2,7 +2,16 @@ local M = {}
 local userPlugins = require "custom.plugins"
 local g = vim.g
 
-g.gitblame_ignored_filetypes = {'NvimTree', 'packer'}
+-- git_blame configurations
+g.gitblame_ignored_filetypes = {'NvimTree', 'packer', 'Outline'}
+
+-- symbols-outline.nvim configurations
+g.symbols_outline = {
+  keymaps = {
+    close = {}, -- disable 'quit on ESC'
+  },
+}
+
 
 M.options = {
   mapleader = ",",
