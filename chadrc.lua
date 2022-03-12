@@ -9,7 +9,7 @@ M.options = {
 }
 
 M.ui = {
-  theme = "onedark-deep",
+  theme = "tokyodark",
 }
 
 M.plugins = {
