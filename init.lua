@@ -17,15 +17,6 @@ map("n", "<leader>dd", ":DiffviewOpen HEAD")
 map("n", "<leader>dc", ":DiffviewClose <CR>")
 map("n", "<leader>df", ":DiffviewFileHistory <CR>")
 
--- git_blame configurations
-vim.g.gitblame_ignored_filetypes = {
-  'NvimTree',
-  'packer',
-  'Outline',
-  'DiffviewFiles',
-  'DiffviewFileHistory',
-}
-
 -- symbols-outline.nvim configurations
 vim.g.symbols_outline = {
   auto_preview = false,
