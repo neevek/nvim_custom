@@ -1,32 +1,12 @@
 local M = {}
 local userPlugins = require "custom.plugins"
-local g = vim.g
-
--- git_blame configurations
-g.gitblame_ignored_filetypes = {
-  'NvimTree',
-  'packer',
-  'Outline',
-  'DiffviewFiles',
-  'DiffviewFileHistory',
-}
-
--- symbols-outline.nvim configurations
-g.symbols_outline = {
-  auto_preview = false,
-  show_numbers = true,
-  keymaps = {
-    close = {}, -- disable 'quit on ESC'
-  },
-}
-
 
 M.options = {
   mapleader = ",",
 }
 
 M.ui = {
-  theme = "tokyodark",
+  theme = "onedark-deep",
 }
 
 M.plugins = {
@@ -49,10 +29,33 @@ M.plugins = {
     nvim_tree = {
       view = {
         width = 40,
+        mappings = {
+          list = {
+            { key = {"i"}, action = "split" },
+            { key = {"o"}, action = "vsplit" },
+          }
+        }
       },
       filters = {
         dotfiles = true,
       },
+    },
+
+    bufferline = {
+      options = {
+        diagnostics = "nvim_lsp",
+        diagnostics_indicator = function(count, level, diagnostics_dict, context)
+          local icon = level:match "error" and " " or " "
+          return " " .. icon .. count
+        end,
+      },
+
+      highlights = {
+        close_button_selected = {
+          guifg = '#6c7d9c',
+        },
+      },
+
     },
   },
 

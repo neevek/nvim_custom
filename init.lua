@@ -13,7 +13,31 @@ map("n", "<space>", "viwye<space><ESC>")                -- yank word under curso
 map("n", "<space><space>", 'viw"_d"+Pa<ESC>')           -- replace word under cursor
 map("n", "<leader>r", ":%s/\\<<C-r><C-w>\\>//g<Left><Left>")
 map("n", "<leader>t", ":SymbolsOutline <CR>")
-map("n", "<leader>d", ":DiffviewOpen HEAD")
+map("n", "<leader>dd", ":DiffviewOpen HEAD")
+map("n", "<leader>dc", ":DiffviewClose <CR>")
 map("n", "<leader>df", ":DiffviewFileHistory <CR>")
 
--- NOTE: the 4th argument in the map function is be a table i.e options but its most likely un-needed so dont worry about it
+-- git_blame configurations
+vim.g.gitblame_ignored_filetypes = {
+  'NvimTree',
+  'packer',
+  'Outline',
+  'DiffviewFiles',
+  'DiffviewFileHistory',
+}
+
+-- symbols-outline.nvim configurations
+vim.g.symbols_outline = {
+  auto_preview = false,
+  show_numbers = true,
+  keymaps = {
+    close = {}, -- disable 'quit on ESC'
+  },
+}
+
+-- avoid unwanted spaces in empty lines
+vim.g.autoindent = true
+
+-- Don't go to previous/next line with h,l,left arrow and right arrow
+-- when cursor reaches end/beginning of line
+vim.opt.whichwrap:remove "<>[]hl"
