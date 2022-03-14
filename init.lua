@@ -21,6 +21,9 @@ map("n", "<leader>df", ":DiffviewFileHistory <CR>")
 vim.g.symbols_outline = {
   auto_preview = false,
   show_numbers = true,
+  relative_width = false,
+  width = 40,
+
   keymaps = {
     close = {}, -- disable 'quit on ESC'
   },
