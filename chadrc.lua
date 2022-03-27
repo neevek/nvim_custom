@@ -62,10 +62,6 @@ M.plugins = {
 }
 
 M.mappings = {
-  misc = {
-    cp_whole_file = "<C-A>",
-  },
-
   terminal = {
     new_horizontal = "<leader>a",
     pick_term = "<leader>A",
