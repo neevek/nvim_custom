@@ -1,12 +1,13 @@
 local M = {}
-local userPlugins = require "custom.plugins"
+local user_plugins = require "custom.plugins"
+local custom_alpha = require "custom.plugins.alpha"
 
 M.options = {
   mapleader = ",",
 }
 
 M.ui = {
-  theme = "tokyonight",
+  theme = "tokyodark",
 }
 
 M.plugins = {
@@ -54,11 +55,14 @@ M.plugins = {
           guifg = '#6c7d9c',
         },
       },
+    },
 
+    alpha = {
+      buttons = custom_alpha.buttons,
     },
   },
 
-  install = userPlugins,
+  install = user_plugins,
 }
 
 M.mappings = {
