@@ -17,6 +17,8 @@ map("n", "<leader>dd", ":DiffviewOpen HEAD")
 map("n", "<leader>dc", ":DiffviewClose <CR>")
 map("n", "<leader>df", ":DiffviewFileHistory <CR>")
 
+vim.g.rustfmt_autosave = true
+
 -- symbols-outline.nvim configurations
 vim.g.symbols_outline = {
   auto_preview = false,
