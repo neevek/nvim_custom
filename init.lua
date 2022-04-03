@@ -41,3 +41,11 @@ vim.g.autoindent = true
 -- Don't go to previous/next line with h,l,left arrow and right arrow
 -- when cursor reaches end/beginning of line
 vim.opt.whichwrap:remove "<>[]hl"
+
+-- Add borders to the diagnostic floating window
+vim.diagnostic.config({
+  float = {
+    source = 'always',
+    border = 'single',
+  },
+})

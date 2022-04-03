@@ -10,7 +10,7 @@ fg("TelescopePromptBorder", colors.yellow, colors.black2)
 fg_bg("TelescopePreviewTitle", colors.orange, colors.black2)
 fg_bg("TelescopePromptTitle", colors.orange, colors.black2)
 fg_bg("TelescopeResultsTitle", colors.green, colors.black2)
-fg_bg("TelescopeSelection", colors.orange, colors.grey)
+fg_bg("TelescopeSelection", colors.yellow, colors.grey)
 
 fg("AlphaHeader", colors.nord_blue)
 fg("AlphaButtons", colors.nord_blue)
