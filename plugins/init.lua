@@ -4,4 +4,5 @@ return {
   { 'simrat39/symbols-outline.nvim' },
   { 'sindrets/diffview.nvim' },
   { 'rust-lang/rust.vim' },
+  { 'nathom/filetype.nvim' },
 }

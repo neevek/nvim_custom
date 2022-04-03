@@ -8,6 +8,7 @@ M.options = {
 
 M.ui = {
   theme = "tokyodark",
+  hl_override = "custom.highlights",
 }
 
 M.plugins = {
@@ -76,6 +77,11 @@ M.mappings = {
       prev_buffer = "H",
       next_buffer = "L",
     },
+
+    nvimtree = {
+      toggle = "<F3>",
+    },
+
   }
 }
 

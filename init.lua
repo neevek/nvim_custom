@@ -7,7 +7,6 @@ local map = require("core.utils").map
 
 map("n", "<leader>cc", ":Telescope <CR>")
 map("n", "<leader>w", ":w <CR>")
-map("n", "<F3>", ":NvimTreeToggle <CR>")
 map("n", "tt", ":q <CR>")
 map("n", "<space>", "viwye<space><ESC>")                -- yank word under cursor
 map("n", "<space><space>", 'viw"_d"+Pa<ESC>')           -- replace word under cursor
@@ -16,8 +15,13 @@ map("n", "<leader>t", ":SymbolsOutline <CR>")
 map("n", "<leader>dd", ":DiffviewOpen HEAD")
 map("n", "<leader>dc", ":DiffviewClose <CR>")
 map("n", "<leader>df", ":DiffviewFileHistory <CR>")
+map("n", "<tab>", ":lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_cursor()) <CR>")
+
 
 vim.g.rustfmt_autosave = true
+
+-- settings for nathom/filetype.nvim
+vim.g.did_load_filetypes = 1
 
 -- symbols-outline.nvim configurations
 vim.g.symbols_outline = {
