@@ -4,6 +4,12 @@ local custom_alpha = require "custom.plugins.alpha"
 
 M.options = {
   mapleader = ",",
+
+  terminal = {
+      window = {
+         split_ratio = 0.2,
+      },
+  }
 }
 
 M.ui = {
