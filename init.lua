@@ -16,6 +16,7 @@ map("n", "<leader>dd", ":DiffviewOpen HEAD")
 map("n", "<leader>dc", ":DiffviewClose <CR>")
 map("n", "<leader>df", ":DiffviewFileHistory <CR>")
 map("n", "<tab>", ":lua require('telescope.builtin').lsp_code_actions(require('telescope.themes').get_cursor()) <CR>")
+map("i", "JK", "<ESC>")
 
 -- enable rustfmt on save for .rs files
 vim.g.rustfmt_autosave = true
