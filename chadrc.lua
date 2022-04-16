@@ -30,6 +30,10 @@ M.plugins = {
     lspconfig = {
       setup_lspconf = "custom.plugins.lspconfig",
     },
+
+    luasnip = {
+      snippet_path = "./lua/custom/vs_snippets",
+    },
   },
 
   default_plugin_config_replace = {
