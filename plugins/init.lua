@@ -45,6 +45,10 @@ return {
     end,
   },
 
+  ["nvim-telescope/telescope.nvim"] = {
+    cmd = false,
+  },
+
   ["nvim-telescope/telescope-ui-select.nvim"] = {
     after = "telescope.nvim",
 

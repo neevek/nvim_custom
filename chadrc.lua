@@ -8,6 +8,12 @@ M.ui = {
   hl_override = "custom.highlights",
 }
 
+M.options = {
+  user = function()
+    vim.g.mapleader = ","
+  end
+}
+
 M.plugins = {
   options = {
     statusline = {
@@ -80,8 +86,6 @@ M.mappings = {
   },
 
   misc = function()
-    vim.g.mapleader = ","
-
     -- enable rustfmt on save for .rs files
     vim.g.rustfmt_autosave = true
 
