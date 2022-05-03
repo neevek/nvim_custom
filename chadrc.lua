@@ -132,6 +132,7 @@ M.mappings = {
     map("n", "<leader>dc", ":DiffviewClose <CR>")
     map("n", "<leader>df", ":DiffviewFileHistory <CR>")
     map("n", "<leader>c", "<cmd> :Telescope command_history <CR>")
+    map("n", "<leader>s", "<cmd> :Telescope lsp_document_symbols <CR>")
     map("i", "JK", "<ESC>")
 
     local buf_map = function(...)
